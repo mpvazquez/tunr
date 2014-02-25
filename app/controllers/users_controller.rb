@@ -20,6 +20,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @playlists = Playlist.all
+    @users = User.all
   end
 
   def edit
